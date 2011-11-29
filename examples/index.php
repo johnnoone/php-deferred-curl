@@ -37,7 +37,7 @@ $jobdaemon
     ->defer($r4, $callback)
     // We need $r4 now!
     ->waitFor($r4)
-    // Required all defered curls to be finished
+    // Required all pending curls to be finished
     ->join();
 
 echo 'DONE' . PHP_EOL;
